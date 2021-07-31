@@ -1,6 +1,4 @@
-# XIAOMIROUTER-API
-1.```npm install ```
-
-2.```node test ```
-
-3.效果图![示例图](https://i.loli.net/2021/07/18/3Q6HjoJBE7xMYwv.png)
+目前可用功能:
+* [x] 获取当前路由连接过的设备
+* [x] 获取5G和2.4G频段设备数量
+* [x] 通过mac设定指定设备的断/连网   
