@@ -9,7 +9,8 @@ const setMacFilter = require("./src/misystem/SET/mac_filter");
   const {token} = loginResult;
   console.log(await getNewStatus(token)) // 获取2.4G和5G频段设备数量
   console.log(await getDevicelist(token)) // 获取当前局域网下面的所有连接过的设备 
-  console.log(await setMacFilter(token,`EA:57:2F:17:18:8F`,false)) // 进行断网联网的设置 参数:token,设备MAC地址,(false 为断网 true 联网)
+  console.log(await setMacFilter(token,`EA:57:2F:17:18:8F`,false))
+  // 进行断网联网的设置 参数:token,设备MAC地址,(false 为断网 true 联网)
 })() 
 ```
 目前可用功能:
