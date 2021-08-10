@@ -5,7 +5,7 @@ const getNewStatus = require("./src/misystem/GET/newstatus");
 const getDevicelist = require("./src/misystem/GET/devicelist");
 const setMacFilter = require("./src/misystem/SET/mac_filter");
 (async ()=>{
-  const loginResult = await login("password") // your wifi password
+  const loginResult = await login("password") // 你的wifi密码
   const {token} = loginResult;
   console.log(await getNewStatus(token)) // 获取2.4G和5G频段设备数量
   console.log(await getDevicelist(token)) // 获取当前局域网下面的所有连接过的设备 
